@@ -1,0 +1,57 @@
+#### &copy2019; Muhammad Adam Canrayneldy.
+
+
+nesting react component
+
+App.js(as Root Component) --->Navbar.js
+                          \-->ContactForm.js
+
+preventDefault(); --> agar page tidak terefresh
+
+Container vs UI Components
+Container Components:
+-Contain state
+-Contain lifecycle hooks(semua proses terjadi disini)
+-Not concerned with UI(tidak ada hubungannya)
+-Use classes to create
+UI Components:
+-Don't contain state
+-receive data from props
+-only conrnered with UI(ada hubungannya)
+-Use function to create
+
+conditional output --> itu penting, mengeluarkan output berdasarkan kondisi.
+
+lifecycle hooks method-> 
+componentDidMount() -> akan jalan otomatis ketika menginstasi nya di sebuah class
+componentDidUpdate() -> method ini akan mengdetek props dan state ketikadi update(diubah)
+
+Higher Order Component(WrappedComponent->component biasa yang dibungkus component lain yang menjadikannya powerfull):
+Components-->HOC->Supercharged Component
+
+Fake Dummy Data JSON: https://jsonplaceholder.typicode.com/
+
+Axios-->HttpRequest->untuk mengambil data seperti ajax
+
+Route Parameters
+-sebagian dari URL yang berubah
+-biasanya kita dapat melihatnya di URL untuk individual records
+User Profile Route:
+*-mysite.com/users/adamcanray
+*-mysite.com/users/neldy
+Cooking recipe page:
+mycookingsite.com/recipes/12345
+mycookingsite.com/recipes/67890
+
+redux:
+-Central data store for all app data(penyimpanan data pusat untuk semua app)
+-Any Component can access data from it
+-Makes state management easy
+
+app.js-->Blog-->Latest Blogs
+      \   \  \->Comments
+       \   \---->Redux<--\
+        \->Homepage---->sidebar
+                   \--->Main Content
+
+Reducer(method)->redux(a central data/objects)->component
