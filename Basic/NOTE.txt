@@ -1,0 +1,5 @@
+17-desember-2019
+-menggunakan React CDN
+-menggunakan babel untuk menerjemahkan javascript(compile) <script type="text/babel"></script>
+-menggunakan ekstensi Google Chrome --> React Dev Tools
+-
